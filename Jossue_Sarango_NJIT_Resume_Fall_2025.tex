@@ -1,0 +1,231 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\usepackage[right=0.6cm, top=0.6cm, left=0.6cm, bottom=0.6cm]{geometry}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - reduce spacing
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-9pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%--HEADING--%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+    \textbf{\Huge \scshape Jossue Sarango} \\ \vspace{1pt}
+    \small 973-274-5136 $|$ \href{mailto:jossuesarango1@gmail.com}{\underline{jossuesarango1@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/jossue-sarango}{\underline{linkedin.com/in/jossue-sarango}} $|$
+    \href{https://github.com/sjossue}{\underline{github.com/sjossue}} $|$ 
+    \href{https://sjossue.github.io}{\underline{sjossue.github.io}}
+\end{center}
+\vspace{-12pt}
+
+%%%%%%%%%%%%%%%%--EDUCATION--%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\vspace{5pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {Bachelor of Science in Mechanical Engineering, GPA: 3.4 }{Expected: May 2028}
+        \vspace{5pt}
+        \begin{itemize}[leftmargin=0.15in, itemsep=3pt, label={}]
+            \small\item{
+                \textbf{Relevant Coursework}: Computer Science I (Programming Fundamentals, MATLAB), Differential Equations, Dynamics, Calculus III}
+         \end{itemize}
+        
+          \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%%%%%%%%%%%%%%%%%%%%%--EXPERIENCE--%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \vspace{5pt}
+    \resumeSubheading
+        {External Affairs Intern (Regional Public Affairs Team)}{May 2025 -- Aug 2025}
+            {PSEG (Public Service Enterprise Group)}{Trenton, NJ}
+            \resumeItemListStart
+            \resumeItem{Engineered an automated data consolidation system using Excel (Advanced formulas, Power Query, conditional logic) to collect 200+ data points across 70+ municipalities, reducing manual report time by 95\% and enabling same-day response to elected officials.}
+            \resumeItem{Emergency Weather Response Protocol: Developed a standardized communication framework serving 2.4M electric and 1.9M gas customers that reduced the response time of municipal leaders by 85\% during severe weather events affecting 100K+ customers.}
+            \resumeItem{Created project tracking dashboard using Excel and PowerPoint to monitor electrical substation and 69kV circuit infrastructure projects, streamlining data workflow for cross-functional teams.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {Webmaster \& Software Developer}{Sep 2025 -- Present}
+      {Society of Hispanic Professional Engineers (SHPE) at the New Jersey Institute of Technology}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Led the digital transformation for an 80+ member organization by architecting and deploying a modern React/Next.js website, improving page load speeds by 70\% and increasing mobile responsiveness to 98\% compatibility.}
+        \resumeItem{Organized digital infrastructure by restructuring 500+ Google Drive files and implementing Discord server permissions for 200+ members, reducing new member onboarding time by 60\% and eliminating recurring access support requests.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Chassis Subteam Member - Vehicle Systems Engineering}{Sep 2025 -- Present}
+      {Baja Society of Automotive Engineers (SAE) at the New Jersey Institute of Technology}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Performed 12+ FEA iterations analyzing roll cage under front/side/rear impact loads (15g, 10g, 8g), identifying stress concentration points that enabled 12\% weight reduction while maintaining 1.5x safety factor and meeting SAE competition requirements.}
+        \resumeItem{Resolved suspension-chassis conflict through dynamic load analysis of 8 mounting point configurations, preventing frame cracking failure mode with predicted 85\% failure probability at 3g lateral loads.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%%%%%%%%%%%%%%%%%%%%--PROJECTS--%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+    
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Autonomous Robot Navigation Simulator} $|$ \emph{Python, Pygame, NumPy, Matplotlib}} {Oct 2025}
+        \resumeItemListStart
+        \resumeItem{Developing object-oriented Python simulation framework implementing pathfinding algorithms (A*, Dijkstra) and obstacle avoidance logic for autonomous robot navigation, utilizing NumPy for efficient matrix operations and Pygame for real-time visualization.}
+        \resumeItem{Building modular architecture with configurable sensor models (LiDAR, ultrasonic) and physics engines to simulate real-world systems.}
+        \resumeItemListEnd
+        
+        \vspace{-10pt}
+    \resumeProjectHeading
+    {\textbf{Linear Actuator Driven Hand Prosthetic} $|$ \emph{SolidWorks, Ultimaker Cura, 3D Printing}} {Dec 2024}
+    
+    \resumeItemListStart
+    \resumeItem{Designed 15-component prosthetic hand assembly through 8 CAD iterations using FEA, achieving 45N finger joint capacity with 1.8x safety factor while optimizing 3D printing parameters to reduce material usage by 22\% and print time by 18\%.}
+    \resumeItem{Validated design through 25+ load cycle testing protocol at 10N, 25N, and 40N forces, identifying 3 critical failure modes (joint fatigue, actuator mounting slip, tendon tension loss) and iteratively improving structural integrity to withstand 30N loads.}
+    \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+
+%%%%%%%%%%%%%%%%%%%%%--Leadership--%%%%%%%%%%%%%%%%%%%%%
+\section{Leadership}
+\vspace{3pt}
+
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Jersey Governors Fellow}{June 2025 -- Aug 2025}
+      {Center for Hispanic Policy, Research, \& Development (CHPRD) with the State of New Jersey} {Trenton, NJ}
+      \resumeItemListStart
+      \resumeItem{Led a 6-person team through an 8-week strategic planning project, conducting 20+ stakeholder interviews and analyzing 5 years of organizational data to develop a HISPA engagement framework projected to expand reach by 40\%.}
+     \resumeItemListEnd
+
+      \vspace{3pt}
+    \resumeSubheading
+      {Information Technology Committee Member}{Oct 2025 -- Present}
+      {American Latino Professionals for America (ALPFA) at the New Jersey Institute of Technology}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Supported technical infrastructure for 60+ members, ensuring reliable digital operations for professional development programming.}
+      \resumeItemListEnd
+
+      \vspace{3pt}
+      \resumeSubheading
+      {FirstGenU Fellow}{Sep 2025 -- Present}
+      {America Needs You with the Morgan Stanley Institute for Inclusion} {Remote}
+      \resumeItemListStart
+        \resumeItem{Completed 40+ hours of career readiness and expanded network by 100+ industry connections across finance and technology sectors.}
+      \resumeItemListEnd
+
+      \vspace{3pt}
+    \resumeSubheading
+      {Outreach Coordinator}{Jan 2025 -- Present}
+      {Transition, Engagement, Access, \& Mentorship (T.E.A.M.) with the Educational Opportunity Program}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Designed promotional materials and implemented engagement strategies to plan, execute, and promote career development programs.}
+      \resumeItemListEnd
+
+      \vspace{3pt}
+      \resumeSubheading
+      {HISPA Role Model}{June 2025 -- Aug 2025}
+      {Hispanics Inspiring Students' Performance and Achievement} {Elizabeth, NJ}
+      \resumeItemListStart
+        \resumeItem{Served as a role model and mentor for first-generation Hispanic students, navigating college readiness and future STEM pathways.}
+     \resumeItemListEnd
+     
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+
+
+%%%%%%%%%%%%%%%%%%%%--Technical Skills--%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, itemsep=0pt, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, MATLAB, C++, Java, JavaScript, TypeScript, HTML/CSS} \\
+     \textbf{Software Development}{: Git/GitHub, Object-Oriented Programming, Data Structures, Debugging, Testing, Software Engineering} \\ 
+     \textbf{Technologies \& Frameworks}{: Linux (basic proficiency), React, Next.js, Tailwind CSS, NumPy, Matplotlib, Pygame, Excel} \\
+     \textbf{Engineering Tools}{: SolidWorks (FEA), AutoCAD, 3D Modeling/Printing, CAD Assembly, Computational Analysis} \\
+     \textbf{Areas of Interest}{: Autonomous Vehicle Systems, Robotics, Embedded Systems, Machine Learning, Computer Vision, GPU programming} \\
+     \textbf{Spoken Languages }{: English (Native), Spanish (Fluent), Mandarin (HSK 2), Portuguese (Conversational)}
+    }}
+ \end{itemize}
+\vspace{-12pt}
+
+
+\end{document}
